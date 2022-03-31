@@ -5,6 +5,30 @@ require_once 'Bicycle.php';
 require_once 'Car.php';
 require_once 'Truck.php';
 
+$americanTruck = new Truck('purple', 4, 'fuel', 100);
+$frenchTruck = new Truck('blue', 3, 'hydrogen', 75);
+$germanTruck = new Truck('red', 2, 'electric', 55);
+
+var_dump($americanTruck, $frenchTruck, $germanTruck);
+
+echo $americanTruck->getStorageCapacity() . PHP_EOL;
+echo $americanTruck->getInitialStorage() . PHP_EOL;
+echo $americanTruck->isFilled() . PHP_EOL;
+echo $americanTruck->fill() . PHP_EOL;
+echo $americanTruck->isFilled() . PHP_EOL;
+
+echo $frenchTruck->getStorageCapacity() . PHP_EOL;
+echo $frenchTruck->getInitialStorage() . PHP_EOL;
+echo $frenchTruck->isFilled() . PHP_EOL;
+echo $frenchTruck->fill() . PHP_EOL;
+echo $frenchTruck->isFilled() . PHP_EOL;
+
+echo $germanTruck->getStorageCapacity() . PHP_EOL;
+echo $germanTruck->getInitialStorage() . PHP_EOL;
+echo $germanTruck->isFilled() . PHP_EOL;
+echo $germanTruck->fill() . PHP_EOL;
+echo $germanTruck->isFilled() . PHP_EOL;
+
 var_dump(Car::ALLOWED_ENERGIES);
 
 $bicycle = new Bicycle('blue', 1);
